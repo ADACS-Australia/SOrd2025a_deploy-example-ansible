@@ -1,0 +1,8 @@
+username: "ksmith1"
+software_name: "hello-world"
+base_dir: "/software/projects/askaprt/{{ username }}"
+software_dir: "{{ base_dir }}/{{ software_name}}/{{ version }}"
+software_path: "{{ software_dir }}/{{software_name}}"
+module_dir: "{{ base_dir }}/modulefiles/{{ software_name }}"
+module_file_path: "{{ module_dir }}/{{ version }}.lua"
+singularity_version: "4.1.0-slurm"
